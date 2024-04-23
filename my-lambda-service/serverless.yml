@@ -66,6 +66,17 @@ functions:
       - http:
           path: hello
           method: get
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    # httpsProtocol: "dev-certs"
+    host: 0.0.0.0
+    httpPort: 4000
+    # stageVariables:
+    # foo: "bar"
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details

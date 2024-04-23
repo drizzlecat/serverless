@@ -6,12 +6,5 @@
   "scripts": {
     "deploy": "serverless deploy",
     "offline": "serverless offline"
-  },
-  "dependencies": {
-    "serverless": "latest"
-  },
-  "devDependencies": {
-    "serverless": "latest"
   }
 }
-

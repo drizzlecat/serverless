@@ -7,10 +7,9 @@ COPY package*.json ./
 
 RUN npm install
 
-# RUN npm install -g serverless@latest
+RUN npm install -g serverless
+RUN npm install -g serverless-offline
 
 COPY . .
-
-EXPOSE 3000
 
 # CMD ["serverless", "deploy"]

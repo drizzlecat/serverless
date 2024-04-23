@@ -15,10 +15,10 @@ services:
     env_file:
       - .env
     ports:
-      - "3005:3000"
-    # command: serverless deploy
-    stdin_open: true  # Keep stdin open
-    tty: true         # Allocate a pseudo-TTY
+      - "3005:4000"
+    command: serverless offline
+    # stdin_open: true  # Keep stdin open
+    # tty: true         # Allocate a pseudo-TTY
 
 volumes:
   node_modules:
